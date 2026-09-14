@@ -8,7 +8,7 @@
 
     --Blue-200: hsl(224, 100%, 95%);
 
-    --Blue-400: hsla(220, 100%, 64%, 0.585) ;
+    --Blue-400: hsla(220, 100%, 64%, 0.535) ;
 
     --Blue-600: hsl(228, 100%, 60%);
 
@@ -49,6 +49,7 @@
 
 body{
     width: 100%;
+    overflow: hidden;
     height: 100vh;
 }
 
@@ -84,6 +85,10 @@ body{
     font-size: var(--font-nav-footer);
 }
 
+a{
+    text-decoration: none;
+    color: var(--whiteColor);
+}
 
 /*-----------------------------------
             Nav  Styling 
@@ -102,6 +107,25 @@ nav , .humberger-menu{
 }
 
 
+.menu-links{
+    padding: 50px;
+    background-color: var(--Blue-700);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:80px ;
+    right: -550px;
+    /* border: 1px solid red; */
+    width: 500px;
+    height: 100vh;
+    z-index: 100;
+    /* background-color: rgba(0, 0, 0, 0.593); */
+}
+
+.menu-links a {
+    font-size: 50px;
+}
+
 /*---------------------------------------
                 Conatiner styling 
 -----------------------------------------*/
@@ -112,6 +136,7 @@ nav , .humberger-menu{
     /* border: 1px solid var(--Blue-400); */
 }
 
+
 .left-container{
     padding: 0px var(--mainPadding) ;
     display: flex;
@@ -120,6 +145,7 @@ nav , .humberger-menu{
     gap:30px;
     border: 1px solid var(--Blue-400);
 }
+
 
 .left-container h1{
     font-size: 3.5rem;
