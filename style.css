@@ -108,7 +108,7 @@ nav , .humberger-menu{
     top:80px ;
     right: -550px;
     width: 450px;
-    height: 89.5svh;
+    height: 89.5vh;
     z-index: 100;
     transition: .4s ease-in-out;
 }
@@ -117,7 +117,7 @@ nav , .humberger-menu{
     /* border: 1px solid red; */
     position: relative;
     margin-bottom: 5px;
-    font-size: 50px;
+    font-size: 45px;
     padding: 5px 0px;
     transition: 200ms linear all;
 }
@@ -265,7 +265,7 @@ footer.active{
     }
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: menupx){
     .right-container{
     display: grid;
     grid-template-columns:  1fr;
